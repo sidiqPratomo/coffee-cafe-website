@@ -327,5 +327,20 @@ footer .header-left{
     padding-top: 20px;
 }
 
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in {
+    opacity: 0;
+  }
 
-
+  .slide-up {
+    transform: translateY(20px);
+  }
+  
+  .zoom-in {
+    transform: scale(0.8);
+  }

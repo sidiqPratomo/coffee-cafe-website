@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato";
+}
+
+.container {
+    max-width: 1440px;
+  width: 100%;
+  padding: 0 0px;
+  margin: 0 auto;
+}
+
+header {
+    height: 125px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Ubah position ke fixed, dan top ke 0 */
+    position: fixed;
+    top: 0;
+    /* Ubah z-index ke 10 */
+    z-index:10;
+  }
+
+.logo {
+    width: 335px;
+    margin-top: 39px;
+}
+
+.header-left {
+    float: left;
+  }
+  
+.header-right {
+    float: right;
+  }
+
+.header-right a {
+    line-height: 124px;
+    font-size: 30px;
+    padding: 0 50px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+  
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.top-wrapper{
+    padding: 239px 0 100px 0;
+    color: white;
+    text-align: center;
+    background-image:url("./src/Coffe\ Header.png");
+    background-blend-mode:darken;
+    background-color: #0F8B8D;
+    background-size: cover;
+    border-radius: 12px;
+    height: 740px;
+}
+
+.top-wrapper .text-top h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-style: normal;
+    line-height: 84px;
+}
+
+.top-wrapper .text-top h2 {
+    margin-bottom: 3px;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 43px;
+  }
+
+  .profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: row-reverse; /* Mengatur arah tata letak menjadi sebaliknya (dari kanan ke kiri) */
+    align-items: center;
+    justify-content: center;
+    margin-left: 257px;
+    margin-right: 258px;
+    width: 925px;
+    height: 460px;
+}
+
+.profile .heading{
+    padding-left: 100px;
+}
+
+.heading {
+    height:460px;
+    margin-right: 40px; /* Memberikan margin kanan pada kelas "heading" agar berjarak dari gambar */
+}
+
+.profile-img img {
+    border-radius: 12px;
+    width: 335px; /* Mengatur lebar gambar menjadi 925 piksel */
+    height: 460px; /* Mengatur tinggi gambar menjadi 460 piksel */
+    object-fit: cover; /* Menyesuaikan gambar untuk mengisi area secara proporsional */
+}
+
+.heading h1{
+    font-size: 48px;
+    color: #0F8B8D;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #EC9A29;
+    width:300px;
+}
+
+.heading p{
+    width:452px;
+    font-size: 24px;
+    font-weight: 400;
+    height: 116px;
+}
+
+.showcase-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase{
+    display: flex;
+    margin-left: 257px;
+    margin-right: 258px;
+    width: 926px;
+    height: 335px;
+}
+
+.showcase-img{
+    width: 335px;
+    height:503px;
+}
+
+.showcase-img img{
+    width: 335px;
+    height:335px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.showcase .heading h1{
+    width: 400px;
+}
+
+button{
+    background-color: #A8201A;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.place-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-wrapper.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: row-reverse; /* Mengatur arah tata letak menjadi sebaliknya (dari kanan ke kiri) */
+    align-items: center;
+    justify-content: center;
+    margin-left: 257px;
+    margin-right: 258px;
+    width: 989px;
+    height: 453px;
+}
+
+.place .heading{
+    padding-left: 100px;
+}
+
+.place-img img{
+    border-radius: 12px;
+    width: 453px; /* Mengatur lebar gambar menjadi 925 piksel */
+    height: 453px; /* Mengatur tinggi gambar menjadi 460 piksel */
+    object-fit: cover; /* Menyesuaikan gambar untuk mengisi area secara proporsional */
+}
+
+.ig-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.ig-wrapper .container{
+    display: flex;
+    align-items: center;
+}
+
+.ig{
+    margin-left: 256px;
+    margin-right: 258px;
+}
+.ig-img{
+    width: 927px;
+    height: 632px;
+}
+
+.ig-img .feed-1{
+    justify-content: space-between;
+    display: flex;
+    margin: 50px 0;
+}
+
+.ig-img .feed-2{
+    justify-content: space-between;
+    display: flex;
+}
+
+.ig-img img{
+    width: 237px;
+    height:237px;
+}
+
+.heading-ig h1{
+    font-size: 48px;
+    color: #0F8B8D;
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+}
+
+.heading-ig span{
+    color: #EC9A29;
+    border-bottom: 2px solid #EC9A29;
+}
+
+.ask-us-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.ask-us{
+    width :877px;
+    height :197px;
+    margin-left: 282px;
+    margin-right: 281px;
+}
+
+.ask-us .heading{
+    text-align: center;
+    width :877px;
+    height :197px;
+}
+.ask-us .heading p{
+    text-align: center;
+    width:100%;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #143642;
+    width: 100%;
+    height: 460px;
+    font-family: "lato";
+}
+
+footer li{
+    list-style: none;
+}
+
+footer .logo{
+    float: left;
+    width: 335px;
+    height: 67px;
+    margin-left: 138px;
+}
+
+.footer-list{
+    float: left;
+    color: white;
+    padding-top: 39px;
+}
+
+footer .header-left{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+.footer-list h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #EC9A29;
+}
+
+.footer-list li{
+    padding-top: 20px;
+}
+
+
+
